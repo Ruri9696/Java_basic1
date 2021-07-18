@@ -1,19 +1,24 @@
 package Lesson01;
 
 public class HomeWorkApp {
-    public static void main(String[] args) { // 1 задание
+    // 1 задание
+    public static void main(String[] args) {
         printThreeWords();
         checkSumSign();
         printColor();
         compareNumbers();
     }
-    public static void printThreeWords() { // 2 задание
+    // 2 задание
+    public static void printThreeWords() {
+        System.out.println("------------------");
         System.out.println("Orange");
         System.out.println("Banana");
         System.out.println("Apple");
     }
-    public static void checkSumSign() { // 3 задание
-        int a = 10;
+    // 3 задание
+    public static void checkSumSign() {
+        System.out.println("------------------");
+        int a = 20;
         int b = -15;
         int c = a + b;
         if (c > 0) {
@@ -23,7 +28,9 @@ public class HomeWorkApp {
             System.out.println("Сумма отрицательная");
         }
     }
-    public static void printColor() { // 4 задание
+    // 4 задание
+    public static void printColor() {
+        System.out.println("------------------");
         int value = 25;
         if (value <= 0) {
             System.out.println("Красный");
@@ -35,7 +42,9 @@ public class HomeWorkApp {
             System.out.println("Зеленый");
         }
     }
-    public static void compareNumbers() { // 5 задание
+    // 5 задание
+    public static void compareNumbers() {
+        System.out.println("------------------");
         int a = 10;
         int b = 15;
         if (a >= b) {
