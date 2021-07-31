@@ -7,10 +7,10 @@ public class HomeworkApp02 {
         System.out.println("Ответ: " + methodName(10, 12));
         System.out.println(" ");
         System.out.println("2 задание...");
-        methodNumber(15);
+        methodNumber(0);
         System.out.println(" ");
         System.out.println("3 задание...");
-        System.out.println("Ответ: " + methodNumber2(-25));
+        System.out.println("Ответ: " + methodNumber2(0));
         System.out.println(" ");
         System.out.println("4 задание...");
         methodPrintWordNTimes("Hello World", 6);
@@ -29,11 +29,11 @@ public class HomeworkApp02 {
     }
 
     public static boolean methodNumber2(int c) {
-        return c <= 0;
+        return c < 0;
     }
 
     public static void methodPrintWordNTimes(String word, int times) {
-        for (int i = 0; i < times; i++) {
+        for (int i = 1; i < times; i++) {
             System.out.println("Строка " + i);
         }
     }
