@@ -18,7 +18,7 @@ public class Homework06 {
         Animal[] animals = {cat1, cat2, dog1, dog2};
 
         int runLength = 200;
-        int swimLength = 10;
+        int swimLength = 8;
 
         for (int i = 0; i < animals.length; i++) {
             String nameString = animals[i].getType() + " " + animals[i].getName() + " может ";
@@ -29,9 +29,9 @@ public class Homework06 {
 
             int swimResult = animals[i].swim(swimLength);
             eventName = "проплыть " + animals[i].getMaxSwim() + " м. Пытается проплыть ";
-            eventResult = (swimResult == Animal.Swim_Ok) ? WinEvent : LossEvent;
+            eventResult = (swimResult == Animal.SWIM_OK) ? WinEvent : LossEvent;
 
-            if (swimResult == Animal.Swim_None)
+            if (swimResult == Animal.SWIM_NONE)
                 eventResult = " это не получилось, т.к. коты не плавают";
             result(nameString, eventName, swimLength, eventResult);
         }

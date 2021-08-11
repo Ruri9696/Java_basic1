@@ -1,9 +1,8 @@
 package Lesson06;
 
 public class Animal {
-    static final int Swim_Fail = 0;
-    static final int Swim_Ok = 1;
-    static final int Swim_None = -1;
+    static final int SWIM_OK = 1;
+    static final int SWIM_NONE = -1;
 
     private String type;
     protected String name;
@@ -41,7 +40,7 @@ public class Animal {
     }
 
     protected int swim(int distance) {
-        return (distance <= maxSwim) ? Swim_Ok : Swim_Fail;
+        return (distance <= maxSwim) ? SWIM_OK : SWIM_NONE;
     }
 
 }

@@ -11,7 +11,7 @@ class Cat extends Animal {
 
     @Override
     protected int swim(int distance) {
-        return Animal.Swim_None;
+        return Animal.SWIM_NONE;
     }
 
 }
